@@ -19,7 +19,9 @@
 		925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D2205B504F0021AF49 /* PostsViewController.swift */; };
 		925E97D6205B51130021AF49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D4205B51130021AF49 /* PostCell.swift */; };
 		925E97D7205B51130021AF49 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925E97D5205B51130021AF49 /* PostCell.xib */; };
-		9287CD97205B55C500A2FC4C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287CD96205B55C500A2FC4C /* Model.swift */; };
+		926C9503205B6B6F00CCFBA5 /* Alamofire+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C9502205B6B6F00CCFBA5 /* Alamofire+Extension.swift */; };
+		926C9505205B6C1A00CCFBA5 /* CommentElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C9504205B6C1A00CCFBA5 /* CommentElement.swift */; };
+		9287CD97205B55C500A2FC4C /* PostElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287CD96205B55C500A2FC4C /* PostElement.swift */; };
 		92A906F3205B571900C77941 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A906F2205B571900C77941 /* NetworkManager.swift */; };
 		92A906F6205B57DB00C77941 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A906F5205B57DB00C77941 /* UIViewController+Extension.swift */; };
 		92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */; };
@@ -42,7 +44,9 @@
 		925E97D2205B504F0021AF49 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		925E97D4205B51130021AF49 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		925E97D5205B51130021AF49 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
-		9287CD96205B55C500A2FC4C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		926C9502205B6B6F00CCFBA5 /* Alamofire+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extension.swift"; sourceTree = "<group>"; };
+		926C9504205B6C1A00CCFBA5 /* CommentElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentElement.swift; sourceTree = "<group>"; };
+		9287CD96205B55C500A2FC4C /* PostElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostElement.swift; sourceTree = "<group>"; };
 		92A906F2205B571900C77941 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		92A906F5205B57DB00C77941 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		92ED28BA205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test DOT iOS Arifin Firdaus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				92A906F5205B57DB00C77941 /* UIViewController+Extension.swift */,
+				926C9502205B6B6F00CCFBA5 /* Alamofire+Extension.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -143,7 +148,8 @@
 		92E07D42205B5428007FDB8C /* model */ = {
 			isa = PBXGroup;
 			children = (
-				9287CD96205B55C500A2FC4C /* Model.swift */,
+				9287CD96205B55C500A2FC4C /* PostElement.swift */,
+				926C9504205B6C1A00CCFBA5 /* CommentElement.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -336,13 +342,15 @@
 				925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */,
 				924C4121205B690B00A1896B /* PostViewController+UITableViewDataSource.swift in Sources */,
 				922BD853205B6013003CF7D7 /* CommentsViewController.swift in Sources */,
+				926C9503205B6B6F00CCFBA5 /* Alamofire+Extension.swift in Sources */,
 				924C4128205B6ABA00A1896B /* CommentsViewController+UITableViewDataSource.swift in Sources */,
 				92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */,
 				924C4124205B693400A1896B /* PostViewController+UITableViewDelegate.swift in Sources */,
 				92A906F3205B571900C77941 /* NetworkManager.swift in Sources */,
 				925E97D6205B51130021AF49 /* PostCell.swift in Sources */,
-				9287CD97205B55C500A2FC4C /* Model.swift in Sources */,
+				9287CD97205B55C500A2FC4C /* PostElement.swift in Sources */,
 				922BD858205B6125003CF7D7 /* CommentCell.swift in Sources */,
+				926C9505205B6C1A00CCFBA5 /* CommentElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
