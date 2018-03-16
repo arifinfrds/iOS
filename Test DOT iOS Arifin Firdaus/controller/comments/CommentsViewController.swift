@@ -42,6 +42,7 @@ class CommentsViewController: UIViewController {
     }
     
     // MARK: - Private function
+
     private func setupCell() {
         let nib = UINib(nibName: "CommentCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "comment_cell")
@@ -88,24 +89,5 @@ class CommentsViewController: UIViewController {
 
 
 
-// MARK: - UITableViewDataSource
-extension CommentsViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return comments.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "comment_cell", for: indexPath) as! CommentCell
-        let comment = comments[indexPath.row]
-        cell.dataSource = comment
-        return cell
-    }
-}
 
-extension CommentsViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
-}
+

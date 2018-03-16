@@ -49,12 +49,13 @@
         <!--Posts-->
         <scene sceneID="Mx3-aY-OZT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPU-Ql-zzZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPU-Ql-zzZ" customClass="NavigationController" customModule="Test_DOT_iOS_Arifin_Firdaus" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Posts" id="NQh-ob-80i"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ubT-fL-OGx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ubT-fL-OGx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

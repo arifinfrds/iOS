@@ -11,6 +11,11 @@
 		922BD853205B6013003CF7D7 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD852205B6013003CF7D7 /* CommentsViewController.swift */; };
 		922BD858205B6125003CF7D7 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD856205B6125003CF7D7 /* CommentCell.swift */; };
 		922BD859205B6125003CF7D7 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 922BD857205B6125003CF7D7 /* CommentCell.xib */; };
+		924C4121205B690B00A1896B /* PostViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4120205B690B00A1896B /* PostViewController+UITableViewDataSource.swift */; };
+		924C4124205B693400A1896B /* PostViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4123205B693400A1896B /* PostViewController+UITableViewDelegate.swift */; };
+		924C4126205B6A2500A1896B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4125205B6A2500A1896B /* NavigationController.swift */; };
+		924C4128205B6ABA00A1896B /* CommentsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4127205B6ABA00A1896B /* CommentsViewController+UITableViewDataSource.swift */; };
+		924C412A205B6AD100A1896B /* CommentsViewControlle+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4129205B6AD100A1896B /* CommentsViewControlle+UITableViewDelegate.swift */; };
 		925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D2205B504F0021AF49 /* PostsViewController.swift */; };
 		925E97D6205B51130021AF49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D4205B51130021AF49 /* PostCell.swift */; };
 		925E97D7205B51130021AF49 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925E97D5205B51130021AF49 /* PostCell.xib */; };
@@ -29,6 +34,11 @@
 		922BD852205B6013003CF7D7 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		922BD856205B6125003CF7D7 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		922BD857205B6125003CF7D7 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		924C4120205B690B00A1896B /* PostViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		924C4123205B693400A1896B /* PostViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		924C4125205B6A2500A1896B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		924C4127205B6ABA00A1896B /* CommentsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		924C4129205B6AD100A1896B /* CommentsViewControlle+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentsViewControlle+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		925E97D2205B504F0021AF49 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		925E97D4205B51130021AF49 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		925E97D5205B51130021AF49 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
@@ -73,6 +83,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		924C411E205B68E700A1896B /* posts */ = {
+			isa = PBXGroup;
+			children = (
+				925E97D2205B504F0021AF49 /* PostsViewController.swift */,
+				924C4120205B690B00A1896B /* PostViewController+UITableViewDataSource.swift */,
+				924C4123205B693400A1896B /* PostViewController+UITableViewDelegate.swift */,
+			);
+			path = posts;
+			sourceTree = "<group>";
+		};
+		924C411F205B68F100A1896B /* comments */ = {
+			isa = PBXGroup;
+			children = (
+				922BD852205B6013003CF7D7 /* CommentsViewController.swift */,
+				924C4127205B6ABA00A1896B /* CommentsViewController+UITableViewDataSource.swift */,
+				924C4129205B6AD100A1896B /* CommentsViewControlle+UITableViewDelegate.swift */,
+			);
+			path = comments;
+			sourceTree = "<group>";
+		};
 		92A906F1205B570B00C77941 /* service */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +122,9 @@
 		92E07D40205B5417007FDB8C /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				925E97D2205B504F0021AF49 /* PostsViewController.swift */,
-				922BD852205B6013003CF7D7 /* CommentsViewController.swift */,
+				924C4125205B6A2500A1896B /* NavigationController.swift */,
+				924C411E205B68E700A1896B /* posts */,
+				924C411F205B68F100A1896B /* comments */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -299,10 +330,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924C4126205B6A2500A1896B /* NavigationController.swift in Sources */,
+				924C412A205B6AD100A1896B /* CommentsViewControlle+UITableViewDelegate.swift in Sources */,
 				92A906F6205B57DB00C77941 /* UIViewController+Extension.swift in Sources */,
 				925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */,
+				924C4121205B690B00A1896B /* PostViewController+UITableViewDataSource.swift in Sources */,
 				922BD853205B6013003CF7D7 /* CommentsViewController.swift in Sources */,
+				924C4128205B6ABA00A1896B /* CommentsViewController+UITableViewDataSource.swift in Sources */,
 				92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */,
+				924C4124205B693400A1896B /* PostViewController+UITableViewDelegate.swift in Sources */,
 				92A906F3205B571900C77941 /* NetworkManager.swift in Sources */,
 				925E97D6205B51130021AF49 /* PostCell.swift in Sources */,
 				9287CD97205B55C500A2FC4C /* Model.swift in Sources */,
