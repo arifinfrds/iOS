@@ -12,6 +12,8 @@
 		925E97D6205B51130021AF49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D4205B51130021AF49 /* PostCell.swift */; };
 		925E97D7205B51130021AF49 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925E97D5205B51130021AF49 /* PostCell.xib */; };
 		9287CD97205B55C500A2FC4C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287CD96205B55C500A2FC4C /* Model.swift */; };
+		92A906F3205B571900C77941 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A906F2205B571900C77941 /* NetworkManager.swift */; };
+		92A906F6205B57DB00C77941 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A906F5205B57DB00C77941 /* UIViewController+Extension.swift */; };
 		92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */; };
 		92ED28C3205B4E5D005BDE8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C1205B4E5D005BDE8E /* Main.storyboard */; };
 		92ED28C5205B4E5D005BDE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C4205B4E5D005BDE8E /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		925E97D4205B51130021AF49 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		925E97D5205B51130021AF49 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		9287CD96205B55C500A2FC4C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		92A906F2205B571900C77941 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		92A906F5205B57DB00C77941 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		92ED28BA205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test DOT iOS Arifin Firdaus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92ED28C2205B4E5D005BDE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,22 @@
 				97B8A4FDBED6FA8E8348A3E0 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92A906F1205B570B00C77941 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				92A906F2205B571900C77941 /* NetworkManager.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		92A906F4205B57CB00C77941 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				92A906F5205B57DB00C77941 /* UIViewController+Extension.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		92E07D40205B5417007FDB8C /* controller */ = {
@@ -128,6 +148,8 @@
 		92ED28BC205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus */ = {
 			isa = PBXGroup;
 			children = (
+				92A906F4205B57CB00C77941 /* helper */,
+				92A906F1205B570B00C77941 /* service */,
 				92E07D44205B5479007FDB8C /* supporting files */,
 				92E07D42205B5428007FDB8C /* model */,
 				92E07D41205B5421007FDB8C /* view */,
@@ -267,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A906F6205B57DB00C77941 /* UIViewController+Extension.swift in Sources */,
 				925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */,
 				92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */,
+				92A906F3205B571900C77941 /* NetworkManager.swift in Sources */,
 				925E97D6205B51130021AF49 /* PostCell.swift in Sources */,
 				9287CD97205B55C500A2FC4C /* Model.swift in Sources */,
 			);
