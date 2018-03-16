@@ -13,7 +13,7 @@ class PostsViewController: UIViewController {
     
     // MARK: - Properties
     @IBOutlet var tableView: UITableView!
-    internal var posts = [WelcomeElement]()
+    internal var posts = [PostElement]()
     private var activityIndicatorView: UIActivityIndicatorView!
     
     // MARK: - View life cycle
