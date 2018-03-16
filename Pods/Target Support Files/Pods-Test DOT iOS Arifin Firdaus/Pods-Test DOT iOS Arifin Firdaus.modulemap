@@ -1,0 +1,6 @@
+framework module Pods_Test_DOT_iOS_Arifin_Firdaus {
+  umbrella header "Pods-Test DOT iOS Arifin Firdaus-umbrella.h"
+
+  export *
+  module * { export * }
+}
