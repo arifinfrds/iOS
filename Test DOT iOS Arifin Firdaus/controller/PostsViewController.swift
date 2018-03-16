@@ -75,7 +75,18 @@ class PostsViewController: UIViewController {
         }
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_comments_view_controller" {
+            let commentsVC = segue.destination as! CommentsViewController
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let post = posts[indexPath.row]
+            commentsVC.postId = post.id
+        }
+    }
+    
 }
+
 
 
 // MARK: - UITableViewDataSource
@@ -100,4 +111,10 @@ extension PostsViewController: UITableViewDelegate {
         return 200.0
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segue_comments_view_controller", sender: nil)
+    }
+    
 }
+
+

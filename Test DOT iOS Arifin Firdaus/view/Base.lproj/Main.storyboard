@@ -21,7 +21,7 @@
                     <navigationItem key="navigationItem" title="Posts" id="wGX-dF-IFW"/>
                     <connections>
                         <outlet property="tableView" destination="W0k-cN-COE" id="AYo-r2-28M"/>
-                        <segue destination="EoN-vH-ekr" kind="show" id="04H-Cc-Prd"/>
+                        <segue destination="EoN-vH-ekr" kind="show" identifier="segue_comments_view_controller" id="04H-Cc-Prd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -31,13 +31,16 @@
         <!--Comments-->
         <scene sceneID="yTp-5V-Cxi">
             <objects>
-                <viewController id="EoN-vH-ekr" sceneMemberID="viewController">
+                <viewController id="EoN-vH-ekr" customClass="CommentsViewController" customModule="Test_DOT_iOS_Arifin_Firdaus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jjo-Sg-HlB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Comments" id="PCP-Ep-SVU"/>
+                    <connections>
+                        <outlet property="tableView" destination="jjo-Sg-HlB" id="2hs-iw-Psn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkO-EA-loC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
