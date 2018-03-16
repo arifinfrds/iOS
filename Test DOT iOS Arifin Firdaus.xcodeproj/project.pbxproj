@@ -39,6 +39,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92E07D40205B5417007FDB8C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				925E97D2205B504F0021AF49 /* PostsViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		92E07D41205B5421007FDB8C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				92E07D43205B5438007FDB8C /* cell */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		92E07D42205B5428007FDB8C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		92E07D43205B5438007FDB8C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				92ED28C1205B4E5D005BDE8E /* Main.storyboard */,
+				92ED28C4205B4E5D005BDE8E /* Assets.xcassets */,
+				92ED28C6205B4E5D005BDE8E /* LaunchScreen.storyboard */,
+				925E97D4205B51130021AF49 /* PostCell.swift */,
+				925E97D5205B51130021AF49 /* PostCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		92E07D44205B5479007FDB8C /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
 		92ED28B1205B4E5D005BDE8E = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +101,11 @@
 		92ED28BC205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus */ = {
 			isa = PBXGroup;
 			children = (
-				92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */,
-				92ED28C1205B4E5D005BDE8E /* Main.storyboard */,
-				92ED28C4205B4E5D005BDE8E /* Assets.xcassets */,
-				92ED28C6205B4E5D005BDE8E /* LaunchScreen.storyboard */,
+				92E07D44205B5479007FDB8C /* supporting files */,
+				92E07D42205B5428007FDB8C /* model */,
+				92E07D41205B5421007FDB8C /* view */,
+				92E07D40205B5417007FDB8C /* controller */,
 				92ED28C9205B4E5D005BDE8E /* Info.plist */,
-				925E97D2205B504F0021AF49 /* PostsViewController.swift */,
-				925E97D4205B51130021AF49 /* PostCell.swift */,
-				925E97D5205B51130021AF49 /* PostCell.xib */,
 			);
 			path = "Test DOT iOS Arifin Firdaus";
 			sourceTree = "<group>";
