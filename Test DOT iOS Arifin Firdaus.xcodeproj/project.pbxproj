@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		86CC269446411A7E7E282902 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B8A4FDBED6FA8E8348A3E0 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework */; };
+		922BD853205B6013003CF7D7 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD852205B6013003CF7D7 /* CommentsViewController.swift */; };
+		922BD858205B6125003CF7D7 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922BD856205B6125003CF7D7 /* CommentCell.swift */; };
+		922BD859205B6125003CF7D7 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 922BD857205B6125003CF7D7 /* CommentCell.xib */; };
 		925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D2205B504F0021AF49 /* PostsViewController.swift */; };
 		925E97D6205B51130021AF49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D4205B51130021AF49 /* PostCell.swift */; };
 		925E97D7205B51130021AF49 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925E97D5205B51130021AF49 /* PostCell.xib */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		1FCA4DEB8AC18BDAEF6DDD12 /* Pods-Test DOT iOS Arifin Firdaus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test DOT iOS Arifin Firdaus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus.release.xcconfig"; sourceTree = "<group>"; };
 		4C91B6E3A440A46A86F38108 /* Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig"; sourceTree = "<group>"; };
+		922BD852205B6013003CF7D7 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		922BD856205B6125003CF7D7 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		922BD857205B6125003CF7D7 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		925E97D2205B504F0021AF49 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		925E97D4205B51130021AF49 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		925E97D5205B51130021AF49 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				925E97D2205B504F0021AF49 /* PostsViewController.swift */,
+				922BD852205B6013003CF7D7 /* CommentsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -94,6 +101,9 @@
 		92E07D41205B5421007FDB8C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				92ED28C1205B4E5D005BDE8E /* Main.storyboard */,
+				92ED28C4205B4E5D005BDE8E /* Assets.xcassets */,
+				92ED28C6205B4E5D005BDE8E /* LaunchScreen.storyboard */,
 				92E07D43205B5438007FDB8C /* cell */,
 			);
 			path = view;
@@ -110,11 +120,10 @@
 		92E07D43205B5438007FDB8C /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				92ED28C1205B4E5D005BDE8E /* Main.storyboard */,
-				92ED28C4205B4E5D005BDE8E /* Assets.xcassets */,
-				92ED28C6205B4E5D005BDE8E /* LaunchScreen.storyboard */,
 				925E97D4205B51130021AF49 /* PostCell.swift */,
 				925E97D5205B51130021AF49 /* PostCell.xib */,
+				922BD856205B6125003CF7D7 /* CommentCell.swift */,
+				922BD857205B6125003CF7D7 /* CommentCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -221,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922BD859205B6125003CF7D7 /* CommentCell.xib in Resources */,
 				92ED28C8205B4E5D005BDE8E /* LaunchScreen.storyboard in Resources */,
 				92ED28C5205B4E5D005BDE8E /* Assets.xcassets in Resources */,
 				92ED28C3205B4E5D005BDE8E /* Main.storyboard in Resources */,
@@ -291,10 +301,12 @@
 			files = (
 				92A906F6205B57DB00C77941 /* UIViewController+Extension.swift in Sources */,
 				925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */,
+				922BD853205B6013003CF7D7 /* CommentsViewController.swift in Sources */,
 				92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */,
 				92A906F3205B571900C77941 /* NetworkManager.swift in Sources */,
 				925E97D6205B51130021AF49 /* PostCell.swift in Sources */,
 				9287CD97205B55C500A2FC4C /* Model.swift in Sources */,
+				922BD858205B6125003CF7D7 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
