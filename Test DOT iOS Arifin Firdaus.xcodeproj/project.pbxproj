@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86CC269446411A7E7E282902 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B8A4FDBED6FA8E8348A3E0 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework */; };
 		925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D2205B504F0021AF49 /* PostsViewController.swift */; };
 		925E97D6205B51130021AF49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D4205B51130021AF49 /* PostCell.swift */; };
 		925E97D7205B51130021AF49 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925E97D5205B51130021AF49 /* PostCell.xib */; };
+		9287CD97205B55C500A2FC4C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287CD96205B55C500A2FC4C /* Model.swift */; };
 		92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */; };
 		92ED28C3205B4E5D005BDE8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C1205B4E5D005BDE8E /* Main.storyboard */; };
 		92ED28C5205B4E5D005BDE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C4205B4E5D005BDE8E /* Assets.xcassets */; };
@@ -17,15 +19,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FCA4DEB8AC18BDAEF6DDD12 /* Pods-Test DOT iOS Arifin Firdaus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test DOT iOS Arifin Firdaus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus.release.xcconfig"; sourceTree = "<group>"; };
+		4C91B6E3A440A46A86F38108 /* Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig"; sourceTree = "<group>"; };
 		925E97D2205B504F0021AF49 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		925E97D4205B51130021AF49 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		925E97D5205B51130021AF49 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		9287CD96205B55C500A2FC4C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		92ED28BA205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test DOT iOS Arifin Firdaus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92ED28C2205B4E5D005BDE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92ED28C4205B4E5D005BDE8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92ED28C7205B4E5D005BDE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92ED28C9205B4E5D005BDE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97B8A4FDBED6FA8E8348A3E0 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_DOT_iOS_Arifin_Firdaus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CC269446411A7E7E282902 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16D59ACAFEF6A07D1F3CBB19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C91B6E3A440A46A86F38108 /* Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig */,
+				1FCA4DEB8AC18BDAEF6DDD12 /* Pods-Test DOT iOS Arifin Firdaus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		348D07821E2D87EAF001B577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97B8A4FDBED6FA8E8348A3E0 /* Pods_Test_DOT_iOS_Arifin_Firdaus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92E07D40205B5417007FDB8C /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +82,7 @@
 		92E07D42205B5428007FDB8C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9287CD96205B55C500A2FC4C /* Model.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -87,6 +112,8 @@
 			children = (
 				92ED28BC205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus */,
 				92ED28BB205B4E5D005BDE8E /* Products */,
+				16D59ACAFEF6A07D1F3CBB19 /* Pods */,
+				348D07821E2D87EAF001B577 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92ED28CC205B4E5D005BDE8E /* Build configuration list for PBXNativeTarget "Test DOT iOS Arifin Firdaus" */;
 			buildPhases = (
+				112042A863BA1DB085F40489 /* [CP] Check Pods Manifest.lock */,
 				92ED28B6205B4E5D005BDE8E /* Sources */,
 				92ED28B7205B4E5D005BDE8E /* Frameworks */,
 				92ED28B8205B4E5D005BDE8E /* Resources */,
+				3FC21465A00FDD9085E1416B /* [CP] Embed Pods Frameworks */,
+				11A8B4CA9314C3A14D974EAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +208,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		112042A863BA1DB085F40489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test DOT iOS Arifin Firdaus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11A8B4CA9314C3A14D974EAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FC21465A00FDD9085E1416B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test DOT iOS Arifin Firdaus/Pods-Test DOT iOS Arifin Firdaus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92ED28B6205B4E5D005BDE8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -186,6 +270,7 @@
 				925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */,
 				92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */,
 				925E97D6205B51130021AF49 /* PostCell.swift in Sources */,
+				9287CD97205B55C500A2FC4C /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +405,7 @@
 		};
 		92ED28CD205B4E5D005BDE8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C91B6E3A440A46A86F38108 /* Pods-Test DOT iOS Arifin Firdaus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +421,7 @@
 		};
 		92ED28CE205B4E5D005BDE8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FCA4DEB8AC18BDAEF6DDD12 /* Pods-Test DOT iOS Arifin Firdaus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
