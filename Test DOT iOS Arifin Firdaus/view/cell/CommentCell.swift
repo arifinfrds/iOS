@@ -17,15 +17,31 @@ class CommentCell: UITableViewCell {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     
+    var dataSource: CommentElement? {
+        didSet {
+            updateUI()
+        }
+    }
+    
     
     // MARK: - view life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        bodyLabel.numberOfLines = 0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+    }
+    
+    // MARK: - Private function
+    private func updateUI() {
+        guard let dataSource = dataSource else { return }
+        postIdLabel.text = "PostID : \(dataSource.postID)"
+        idLabel.text = "ID: \(dataSource.id)"
+        nameLabel.text = dataSource.name
+        emailLabel.text = dataSource.email
+        bodyLabel.text = dataSource.body
     }
     
 }

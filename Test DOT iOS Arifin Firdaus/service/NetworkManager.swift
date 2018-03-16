@@ -13,7 +13,7 @@ struct NetworkManager {
     static let PostsUrl = "https://jsonplaceholder.typicode.com/posts"
     
     static func getCommentsUrl(withId id: Int) -> String {
-        return "http://jsonplaceholder.typicode.com/posts/\(id)/comments"
+        return "https://jsonplaceholder.typicode.com/posts/\(id)/comments"
     }
     
 }
