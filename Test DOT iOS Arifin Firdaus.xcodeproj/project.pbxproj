@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D2205B504F0021AF49 /* PostsViewController.swift */; };
+		925E97D6205B51130021AF49 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E97D4205B51130021AF49 /* PostCell.swift */; };
+		925E97D7205B51130021AF49 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925E97D5205B51130021AF49 /* PostCell.xib */; };
 		92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */; };
-		92ED28C0205B4E5D005BDE8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED28BF205B4E5D005BDE8E /* ViewController.swift */; };
 		92ED28C3205B4E5D005BDE8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C1205B4E5D005BDE8E /* Main.storyboard */; };
 		92ED28C5205B4E5D005BDE8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C4205B4E5D005BDE8E /* Assets.xcassets */; };
 		92ED28C8205B4E5D005BDE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ED28C6205B4E5D005BDE8E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		925E97D2205B504F0021AF49 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		925E97D4205B51130021AF49 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		925E97D5205B51130021AF49 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		92ED28BA205B4E5D005BDE8E /* Test DOT iOS Arifin Firdaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test DOT iOS Arifin Firdaus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92ED28BF205B4E5D005BDE8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92ED28C2205B4E5D005BDE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92ED28C4205B4E5D005BDE8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92ED28C7205B4E5D005BDE8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				92ED28BD205B4E5D005BDE8E /* AppDelegate.swift */,
-				92ED28BF205B4E5D005BDE8E /* ViewController.swift */,
 				92ED28C1205B4E5D005BDE8E /* Main.storyboard */,
 				92ED28C4205B4E5D005BDE8E /* Assets.xcassets */,
 				92ED28C6205B4E5D005BDE8E /* LaunchScreen.storyboard */,
 				92ED28C9205B4E5D005BDE8E /* Info.plist */,
+				925E97D2205B504F0021AF49 /* PostsViewController.swift */,
+				925E97D4205B51130021AF49 /* PostCell.swift */,
+				925E97D5205B51130021AF49 /* PostCell.xib */,
 			);
 			path = "Test DOT iOS Arifin Firdaus";
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 				92ED28C8205B4E5D005BDE8E /* LaunchScreen.storyboard in Resources */,
 				92ED28C5205B4E5D005BDE8E /* Assets.xcassets in Resources */,
 				92ED28C3205B4E5D005BDE8E /* Main.storyboard in Resources */,
+				925E97D7205B51130021AF49 /* PostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92ED28C0205B4E5D005BDE8E /* ViewController.swift in Sources */,
+				925E97D3205B504F0021AF49 /* PostsViewController.swift in Sources */,
 				92ED28BE205B4E5D005BDE8E /* AppDelegate.swift in Sources */,
+				925E97D6205B51130021AF49 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
