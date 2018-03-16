@@ -39,8 +39,8 @@ class PostCell: UITableViewCell {
     // MARK: - Private function
     private func updateUI() {
         guard let dataSource = dataSource else { return }
-        userIdLabel.text = "UserID: \(dataSource.userID)"
-        idLabel.text = "Id: \(dataSource.id)"
+        userIdLabel.text = ""
+        idLabel.text = ""
         titleLabel.text = dataSource.title
         bodyLabel.text = dataSource.body
     }

@@ -37,8 +37,8 @@ class CommentCell: UITableViewCell {
     // MARK: - Private function
     private func updateUI() {
         guard let dataSource = dataSource else { return }
-        postIdLabel.text = "PostID : \(dataSource.postID)"
-        idLabel.text = "ID: \(dataSource.id)"
+        postIdLabel.text = ""
+        idLabel.text = ""
         nameLabel.text = dataSource.name
         emailLabel.text = dataSource.email
         bodyLabel.text = dataSource.body
